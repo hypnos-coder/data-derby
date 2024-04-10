@@ -68,16 +68,21 @@ img {
 }
 /* Title */
 .title {
-    color: #9f0bad;  
+    color: #ffffff;  
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder; 
     padding-top: 25px; 
 }
 /* Paragraph */
 p {
-    color: #9f0bad;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px; 
+}
+ul {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 /* Box */
 .box {
