@@ -1,3 +1,4 @@
+/* Credit for the script for CsvToHtmlTable goes to https://github.com/derekeder/csv-to-html-table?tab=readme-ov-file */
 var CsvToHtmlTable = CsvToHtmlTable || {};
 
 CsvToHtmlTable = {
