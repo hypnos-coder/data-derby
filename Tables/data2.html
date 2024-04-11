@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <link rel="stylesheet" type="text/css" medida="screen" href="style.css">
+  <link rel="stylesheet" type="text/css" medida="screen" href="../style.css">
 
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 </head>
@@ -19,7 +19,7 @@
   <div class="navigation">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
       
-        <a class="navbar-brand" href="index.html" style="background-color: #0BADA6;">Data Derby</a>
+        <a class="navbar-brand" href="../index.html" style="background-color: #0BADA6;">Data Derby</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-controls="navbarDropDown" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button> 
@@ -31,45 +31,46 @@
 								Graphs
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="graphs/html/QuestionOne.html">Question One</a>
-								<a class="dropdown-item" href="graphs/html/QuestionTwo.html">Question Two</a>
-								<a class="dropdown-item" href="graphs/html/QuestionThree.html">Question Three</a>
-								<a class="dropdown-item" href="graphs/html/QuestionFour.html">Question Four</a>
-								<a class="dropdown-item" href="graphs/html/QuestionFive.html">Question Five</a>
+								<a class="dropdown-item" href="../graphs/html/QuestionOne.html">Question One</a>
+								<a class="dropdown-item" href="../graphs/html/QuestionTwo.html">Question Two</a>
+								<a class="dropdown-item" href="../graphs/html/QuestionThree.html">Question Three</a>
+								<a class="dropdown-item" href="../graphs/html/QuestionFour.html">Question Four</a>
+								<a class="dropdown-item" href="../graphs/html/QuestionFive.html">Question Five</a>
 						</div> 
 						</li>
 
-						<li class="nav-item active">
-							<a class="nav-link" href="data.html">Data (WIP)</a>
-						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Data
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="data1.html">Q-1</a>
+								<a class="dropdown-item" href="data2.html">Q-2</a>
+								<a class="dropdown-item" href="data3.html">Q-3</a>
+								<a class="dropdown-item" href="data4.html">Q-4</a>
+								<a class="dropdown-item" href="data5.html">Q-5</a>
+						   </div> 
+				   	    </li>
 					</ul>
 				</div>
 	
 	</nav>
   </div>	
 			
-		<div class="container">	
-			<div class="row">
-				
-				<div class="boxTable">
-					<h1 class="title">National Education Cost Tuition</h1>
 
-					<div id="table-container"></div>
-					
-					
+<div class="boxTable">
+	<h1 class="titleTable">Table for Question 2</h1>
 
-				</div>
-			</div>
-		</div>
-	</div>
+	<div id="table-container"></div>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-<script src="js/jquery.csv.min.js"></script>
+<script src="../js/jquery.csv.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-<script src="js/csv_to_html_table.js"></script>
+<script src="../js/csv_to_html_table.js"></script>
 
 <script>
 	function format_link(link) {
@@ -80,7 +81,7 @@
 	}
 
 	CsvToHtmlTable.init({
-		csv_path: "data/tuition.csv",
+		csv_path: "../data/National_education_cost/CP2-remastered.csv",
 		element: "table-container",
 		allow_download: true,
 		csv_options: {
@@ -88,11 +89,9 @@
 			delimiter: '"'
 		},
 		datatables_options: {
-			paging: false
-		},
-		custom_formatting: [
-			[4, format_link]
-		]
+			paging: true,
+			scrollX: true
+		}
 	});
 </script>
 
